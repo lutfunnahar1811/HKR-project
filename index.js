@@ -1,30 +1,5 @@
 const express = require('express');
 const app = express();
-const { MongoClient } = require ('mongodb');
-//app.use((req, res, next) => {
-   //console.log(new date());
-    //next();
-//});
-
- async function main (){
-     const uri = "mongodb+srv://lutfunnahar1811:welcomelutfun@cluster0.lokkf.mongodb.net/sample_mflix?retryWrites=true&w=majority" ;
-     
-    const client= new MongoClient(uri);
-    try{
-
-        await client.connect();
-    }
-    catch(e)
-    {
-console.error(e);
-    }
-    finally
-    {
-        await client.close();
-    }
-    }
-    main().catch(console.error);
-
 
 
 
